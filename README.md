@@ -6,6 +6,12 @@ The most convenient combination of nodejs and typescript makes it easy to start 
 If you don't like Express, you can just replace the app. No other files need to be changed. `app.js`
 
 
+# use
+
+```bash
+gen 
+```
+
 # pm2 or nodemon 
 
 Cause O&M tools depend on production environment configuration, logs, etc., the dependency can be set to global dependency. Of course, it can be set to package automatic dependency, but this does not make sense in actual production.

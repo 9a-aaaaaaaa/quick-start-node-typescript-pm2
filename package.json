@@ -1,9 +1,8 @@
 {
   "name": "quick-start-node-typescript",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The most convenient combination of nodejs and typescript makes it easy to start a project quickly, reducing project configuration time",
-  "main": "bin/server.ts",
-
+  "main": "gen.mjs",
   "scripts": {
     "build": "npx tsc",
     "start": "pm2 start dist/bin/server.js --watch",
@@ -13,7 +12,12 @@
     "postgit": "git push --all",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["nodejs","express","typescript"],
+  "repository":"https://github.com/9a-aaaaaaaa/quick-start-node-typescript-pm2",
+  "keywords": [
+    "nodejs",
+    "express",
+    "typescript"
+  ],
   "author": "9a-aaaaaaaa",
   "license": "ISC",
   "dependencies": {
@@ -25,7 +29,9 @@
     "@types/express": "^4.17.14",
     "@types/node": "^18.8.3",
     "concurrently": "^7.4.0",
+    "inquirer": "^9.1.3",
     "nodemon": "^2.0.20",
-    "typescript": "^4.8.4"
+    "typescript": "^4.8.4",
+    "zx": "^7.1.1"
   }
 }
